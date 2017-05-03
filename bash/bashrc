@@ -1,0 +1,21 @@
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH"
+
+# editor
+if [ -z "$VISUAL" ]; then
+	type vim >/dev/null 2>&1 && VISUAL=vim || VISUAL=vi
+fi
+EDITOR=$VISUAL
+export VISUAL EDITOR
+
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+fi
+
+# rbenv: enable shims and autocompletion
+eval "$(rbenv init -)"
+
+# prompt
+export PS1='\[\e[1;33m\]\w\[\e[0m\]$(__git_ps1 " (%s)")$ '
+
+alias rails='bin/rails'

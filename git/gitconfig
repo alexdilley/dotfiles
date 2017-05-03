@@ -1,0 +1,17 @@
+[user]
+	name = Alex Dilley
+	email = alex.dilley@gmail.com
+[alias]
+	co = checkout
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	st = status -s
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+[fetch]
+	prune = true
+[pull]
+	rebase = true
+[push]
+	default = upstream

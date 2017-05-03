@@ -1,0 +1,7 @@
+Host *
+	User alex
+	ForwardAgent yes
+	ServerAliveInterval 30
+	ServerAliveCountMax 10
+
+Include config.d/skillstream
