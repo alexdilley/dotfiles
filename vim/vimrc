@@ -1,3 +1,51 @@
-syntax on
+execute pathogen#infect()
 
-autocmd Filetype gitcommit setlocal spell textwidth=72
+" Powerline statusline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+" theme
+set background=dark
+colorscheme solarized
+
+" hide buffers without prompt
+set hidden
+
+" use two spaces for tabs
+set expandtab
+set softtabstop=2
+set shiftwidth=2
+
+" line numbers
+set number
+set relativenumber
+
+" highlight current line
+set cursorline
+
+" highlight matching bracket
+set showmatch
+
+" search downwards in the project directory
+set path+=**
+" highlight previous search matches
+set hlsearch
+" ignore case in pattern
+set ignorecase
+" ...if pattern contains only lowercase letters
+set smartcase
+
+" Emacs bindings
+imap <C-d> <Del>
+
+if has('autocmd')
+  " highlight characters beyond column 80
+  augroup vimrc_autocmds
+    autocmd BufEnter * highlight OverLength ctermbg=red ctermfg=white
+    autocmd BufEnter,WinEnter * match OverLength /\%>80v.\+/
+  augroup END
+
+  " stopwritingramblingcommitmessages.com
+  autocmd Filetype gitcommit setlocal spell textwidth=72
+endif

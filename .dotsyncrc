@@ -24,7 +24,8 @@ git/gitignore:.config/git/ignore
 git/gitconfig
 ssh
 tmux.conf
-vim/vimrc
+vim
+vim/bundle/vim-colors-solarized/colors/solarized.vim:.vim/colors/solarized.vim
 [endfiles]
 
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
