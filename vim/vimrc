@@ -8,6 +8,7 @@ python del powerline_setup
 " theme
 set background=dark
 color dracula
+set guifont=Inconsolata\ for\ Powerline:h12
 
 " hide buffers without prompt
 set hidden
