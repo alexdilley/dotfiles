@@ -1,0 +1,21 @@
+-- Silence output of settings on startup.
+\set QUIET 1
+
+-- Display how long each SQL statement takes.
+\timing on
+
+-- Use vertical table format when screen isn't wide enough.
+\x auto
+
+\set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
+\set PROMPT2 ''
+
+-- Use a separate history file per database.
+\set HISTFILE ~/.psql_history- :DBNAME
+-- Lines matching the previous history line are not added to the history.
+\set HISTCONTROL ignoredups
+
+-- Display NULL values less ambiguously.
+\pset null [null]
+
+\unset QUIET
