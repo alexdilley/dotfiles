@@ -7,7 +7,7 @@ python del powerline_setup
 
 " theme
 set background=dark
-colorscheme solarized
+color dracula
 
 " hide buffers without prompt
 set hidden
