@@ -18,4 +18,6 @@ eval "$(rbenv init -)"
 # prompt
 export PS1='\[\e[1;33m\]\w\[\e[0m\]$(__git_ps1 " (%s)")$ '
 
+export PAGER=less
+
 alias rails='bin/rails'
