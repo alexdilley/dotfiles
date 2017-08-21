@@ -40,6 +40,12 @@ set smartcase
 " Emacs bindings
 imap <C-d> <Del>
 
+" window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 if has('autocmd')
   " highlight characters beyond column 80
   augroup vimrc_autocmds
