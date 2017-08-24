@@ -23,6 +23,7 @@ bash/bash_profile
 git/gitignore:.config/git/ignore
 git/gitconfig
 psql/psqlrc
+rbenv
 ssh
 tmux.conf
 vim
