@@ -1,5 +1,7 @@
 Host *
 	User alex
+	AddKeysToAgent yes
+	UseKeychain yes
 	ForwardAgent yes
 	ServerAliveInterval 30
 	ServerAliveCountMax 10
