@@ -19,7 +19,7 @@
 [files]
 dotsyncrc
 bash/bashrc
-bash/bash_profile
+bash/profile
 git/gitignore:.config/git/ignore
 git/gitconfig
 psql/psqlrc
