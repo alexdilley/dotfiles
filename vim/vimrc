@@ -39,6 +39,9 @@ set ignorecase
 " ...if pattern contains only lowercase letters
 set smartcase
 
+" <leader> key map
+let mapleader=','
+
 " Emacs bindings
 imap <C-d> <Del>
 
@@ -58,3 +61,8 @@ if has('autocmd')
   " stopwritingramblingcommitmessages.com
   autocmd Filetype gitcommit setlocal spell textwidth=72
 endif
+
+" Command-T
+" search only files tracked by Git
+let g:CommandTFileScanner='git'
+let g:CommandTGitIncludeUntracked=1
