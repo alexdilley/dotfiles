@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH"
 
 # editor
 if [ -z "$VISUAL" ]; then

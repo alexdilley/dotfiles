@@ -1,10 +1,5 @@
 execute pathogen#infect()
 
-" Powerline statusline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 " theme
 set background=dark
 colorscheme tender
@@ -62,6 +57,19 @@ if has('autocmd')
 
   " stopwritingramblingcommitmessages.com
   autocmd Filetype gitcommit setlocal spell textwidth=72
+endif
+
+" vim-airline statusline
+set laststatus=2
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts=1
+let g:airline_theme='tender'
+" remove erroneous symbol at end of statusline
+let g:airline_skip_empty_sections=1
+if !has('gui_running')
+  " angled separators render poorly in console
+  let g:airline_left_sep=''
+  let g:airline_right_sep=''
 endif
 
 " CtrlP fuzzy file finder
