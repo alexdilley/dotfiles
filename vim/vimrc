@@ -7,10 +7,12 @@ python del powerline_setup
 
 " theme
 set background=dark
-color dracula
+colorscheme tender
 set guifont=Inconsolata\ for\ Powerline:h12
 " hide scrollbars
 set guioptions=
+" match console line spacing
+set linespace=1
 
 " hide buffers without prompt
 set hidden
