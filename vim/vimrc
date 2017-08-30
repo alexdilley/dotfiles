@@ -27,6 +27,10 @@ set cursorline
 " highlight matching bracket
 set showmatch
 
+" show invisibles
+set list
+set listchars=tab:▸\ ,eol:¬,trail:·
+
 " search downwards in the project directory
 set path+=**
 " highlight previous search matches
