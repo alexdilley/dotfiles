@@ -12,6 +12,9 @@ set linespace=1
 " hide buffers without prompt
 set hidden
 
+" reduce time to react to change
+set updatetime=250
+
 " use two spaces for tabs
 set expandtab
 set softtabstop=2
@@ -80,3 +83,16 @@ let g:airline_right_sep=''
 " CtrlP fuzzy file finder
 " search only files un/tracked by Git
 let g:ctrlp_user_command=['.git', 'git --git-dir=%s/.git ls-files -co --exclude-standard']
+
+" Gundo.vim
+nnoremap <F5> :GundoToggle<CR>
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
