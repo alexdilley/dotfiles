@@ -16,3 +16,5 @@
 	rebase = true
 [push]
 	default = upstream
+[url "ssh://git@heroku.com/"]
+	insteadOf = https://git.heroku.com/
