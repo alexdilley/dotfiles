@@ -63,7 +63,7 @@ if has('autocmd')
   augroup END
 
   " stopwritingramblingcommitmessages.com
-  autocmd Filetype gitcommit setlocal spell textwidth=72
+  autocmd Filetype gitcommit setlocal spell
 endif
 
 " vim-airline statusline
