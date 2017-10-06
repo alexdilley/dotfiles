@@ -2,7 +2,7 @@ execute pathogen#infect()
 
 " theme
 set background=dark
-colorscheme tender
+colorscheme hybrid_material
 set guifont=Inconsolata\ for\ Powerline:h12
 " hide scrollbars
 set guioptions=
@@ -73,7 +73,7 @@ let g:airline#extensions#tabline#left_sep=' '
 let g:airline#extensions#tabline#left_alt_sep='|'
 let g:airline#extensions#tabline#show_buffers=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='tender'
+let g:airline_theme='hybrid'
 " remove erroneous symbol at end of statusline
 let g:airline_skip_empty_sections=1
 " angled separators render poorly in console
