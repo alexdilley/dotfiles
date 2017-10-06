@@ -10,6 +10,7 @@ brew "mobile-shell"
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "redis", restart_service: :changed
+brew "ripgrep"
 brew "tmux"
 brew "vim", args: ["with-custom-ruby"]
 brew "watchman"
