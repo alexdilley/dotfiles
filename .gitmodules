@@ -46,3 +46,6 @@
 [submodule "vim/bundle/mru"]
 	path = vim/bundle/mru
 	url = https://github.com/yegappan/mru.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
