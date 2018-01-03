@@ -23,4 +23,5 @@ export PAGER=less
 # iCloud Drive directory
 export ICLOUD=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs
 
+alias ls='ls -G'
 alias rails='bin/rails'
