@@ -1,9 +1,11 @@
-execute pathogen#infect()
+source ~/.vim/packages.vim
 
 " theme
-set background=dark
-colorscheme hybrid_material
-set guifont=Inconsolata\ for\ Powerline:h12
+let g:airline_theme='oceanicnext'
+let g:oceanic_next_terminal_bold=1
+let g:oceanic_next_terminal_italic=1
+colorscheme OceanicNext
+set guifont=Inconsolata-dz\ for\ Powerline:h10
 " hide scrollbars
 set guioptions=
 " match console line spacing
@@ -12,13 +14,11 @@ set linespace=1
 " hide buffers without prompt
 set hidden
 
-" reduce time to react to change
-set updatetime=250
+" limit maximum column to search for syntax items
+set synmaxcol=120
 
 " use two spaces for tabs
-set expandtab
-set softtabstop=2
-set shiftwidth=2
+set ts=2 sts=2 sw=2 expandtab
 
 " line numbers
 set number
@@ -64,16 +64,16 @@ if has('autocmd')
 
   " stopwritingramblingcommitmessages.com
   autocmd Filetype gitcommit setlocal spell
+
+  autocmd BufEnter *.vue syntax sync fromstart
 endif
 
 " vim-airline statusline
-set laststatus=2
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep=' '
 let g:airline#extensions#tabline#left_alt_sep='|'
 let g:airline#extensions#tabline#show_buffers=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='hybrid'
 " remove erroneous symbol at end of statusline
 let g:airline_skip_empty_sections=1
 " angled separators render poorly in console
@@ -97,5 +97,10 @@ endif
 nnoremap <F5> :GundoToggle<CR>
 
 " Ale
-let g:airline#extensions#ale#enabled = 1
+let g:ale_css_stylelint_options='--syntax=scss'
 let g:ale_lint_on_text_changed='never'
+let g:airline#extensions#ale#enabled=1
+
+" vim-vue
+" mitigate performance issues
+let g:vue_disable_pre_processors=1
