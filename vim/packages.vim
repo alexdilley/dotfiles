@@ -26,6 +26,7 @@ call minpac#add('tpope/vim-obsession')
 call minpac#add('tpope/vim-sensible')
 call minpac#add('cakebaker/scss-syntax.vim')
 call minpac#add('tpope/vim-surround')
+call minpac#add('SirVer/ultisnips')
 call minpac#add('posva/vim-vue')
 call minpac#add('othree/yajs.vim')
 
