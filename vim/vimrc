@@ -1,15 +1,13 @@
 source ~/.vim/packages.vim
 
 " theme
-let g:airline_theme='oceanicnext'
-let g:oceanic_next_terminal_bold=1
-let g:oceanic_next_terminal_italic=1
-colorscheme OceanicNext
-set guifont=Inconsolata-dz\ for\ Powerline:h10
-" hide scrollbars
-set guioptions=
-" match console line spacing
-set linespace=1
+" dark
+colorscheme base16-oceanicnext
+let g:airline_theme='base16'
+" light
+" set background=light
+" colorscheme solarized
+" let g:airline_theme='solarized'
 
 " hide buffers without prompt
 set hidden
@@ -61,11 +59,6 @@ if has('autocmd')
     autocmd BufEnter * highlight OverLength ctermbg=red ctermfg=white
     autocmd BufEnter,WinEnter * match OverLength /\%>80v.\+/
   augroup END
-
-  " stopwritingramblingcommitmessages.com
-  autocmd Filetype gitcommit setlocal spell
-
-  autocmd BufEnter *.vue syntax sync fromstart
 endif
 
 " vim-airline statusline
@@ -100,7 +93,3 @@ nnoremap <F5> :GundoToggle<CR>
 let g:ale_css_stylelint_options='--syntax=scss'
 let g:ale_lint_on_text_changed='never'
 let g:airline#extensions#ale#enabled=1
-
-" vim-vue
-" mitigate performance issues
-let g:vue_disable_pre_processors=1

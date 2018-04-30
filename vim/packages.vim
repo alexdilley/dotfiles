@@ -9,26 +9,42 @@ call minpac#init()
 
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
-call minpac#add('w0rp/ale')
-call minpac#add('ctrlpvim/ctrlp.vim')
-call minpac#add('sjl/gundo.vim')
+" universal set of defaults
+call minpac#add('tpope/vim-sensible')
+" syntaxes
+call minpac#add('hail2u/vim-css3-syntax')
 call minpac#add('othree/html5.vim')
-call minpac#add('scrooloose/nerdtree')
+call minpac#add('othree/yajs.vim')
+call minpac#add('posva/vim-vue')
+" colorschemes
+call minpac#add('chriskempson/base16-vim')
+call minpac#add('altercation/vim-colors-solarized')
+" statusline
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-airline/vim-airline-themes')
-call minpac#add('tpope/vim-commentary')
-call minpac#add('hail2u/vim-css3-syntax')
+" sessions
+call minpac#add('tpope/vim-obsession')
+" file system explorer
+call minpac#add('scrooloose/nerdtree')
+" fuzzy file finder
+call minpac#add('ctrlpvim/ctrlp.vim')
+" tree-based undo history
+call minpac#add('sjl/gundo.vim')
+" commenting, with embedded syntax support
+call minpac#add('tomtom/tcomment_vim')
+" quoting/parenthesizing
+call minpac#add('tpope/vim-surround')
+" key mappings
+call minpac#add('tpope/vim-unimpaired')
+" motions
+call minpac#add('easymotion/vim-easymotion')
+" snippets
+call minpac#add('SirVer/ultisnips')
+" visual yank
+call minpac#add('machakann/vim-highlightedyank')
+" linting/formatting
+call minpac#add('w0rp/ale')
+call minpac#add('prettier/vim-prettier')
+" Git
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('airblade/vim-gitgutter')
-call minpac#add('machakann/vim-highlightedyank')
-call minpac#add('elzr/vim-json')
-call minpac#add('tpope/vim-obsession')
-call minpac#add('tpope/vim-sensible')
-call minpac#add('cakebaker/scss-syntax.vim')
-call minpac#add('tpope/vim-surround')
-call minpac#add('SirVer/ultisnips')
-call minpac#add('posva/vim-vue')
-call minpac#add('othree/yajs.vim')
-
-" colorschemes
-call minpac#add('mhartington/oceanic-next')

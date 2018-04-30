@@ -1,0 +1,11 @@
+" hide scrollbars
+set guioptions-=rL
+" don't use alert dialogs (prefer console-like prompts)
+set guioptions+=c
+" type
+set macligatures
+set guifont=Operator\ Mono\ SSm\ Lig\ for\ Powerline:h10
+set linespace=4
+" override theme settings
+autocmd Syntax * hi Comment gui=italic
+autocmd Syntax * hi Type gui=italic

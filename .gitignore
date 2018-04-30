@@ -3,3 +3,4 @@ rbenv/versions
 ssh/id*
 ssh/config.d
 ssh/known_hosts
+vim/pack/minpac/start
