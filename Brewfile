@@ -1,6 +1,5 @@
 cask_args appdir: "/Applications"
-tap "caskroom/cask"
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 tap "petere/postgresql"
 brew "bash"
 brew "bash-completion"
@@ -11,7 +10,6 @@ brew "rbenv-default-gems"
 brew "redis", restart_service: :changed
 brew "ripgrep"
 brew "tmux"
-brew "vim", args: ["with-custom-ruby"]
 brew "watchman"
 brew "yarn"
 brew "petere/postgresql/postgresql-common"
