@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+tput civis
+clear
+echo -n `imgcat /tmp/cover.png`

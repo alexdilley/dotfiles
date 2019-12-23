@@ -24,4 +24,4 @@ export PAGER=less
 export ICLOUD=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs
 
 alias ls='ls -G'
-alias rails='bin/rails'
+alias artcat="ls /tmp/cover.png | entr -c $HOME/.ncmpcpp/artcat"
