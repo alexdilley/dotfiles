@@ -1,14 +1,5 @@
 source ~/.vim/packages.vim
 
-" theme
-" dark
-colorscheme base16-oceanicnext
-let g:airline_theme='base16'
-" light
-" set background=light
-" colorscheme solarized
-" let g:airline_theme='solarized'
-
 " hide buffers without prompt
 set hidden
 
@@ -90,6 +81,5 @@ endif
 nnoremap <F5> :GundoToggle<CR>
 
 " Ale
-let g:ale_css_stylelint_options='--syntax=scss'
 let g:ale_lint_on_text_changed='never'
 let g:airline#extensions#ale#enabled=1

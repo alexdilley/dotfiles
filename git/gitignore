@@ -1,4 +1,4 @@
 .DS_Store
-*.swn
-*.swo
-*.swp
+
+# Vim swap files.
+[._]*.sw[a-p]

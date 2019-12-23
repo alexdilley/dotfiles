@@ -14,6 +14,7 @@ call minpac#add('tpope/vim-sensible')
 " syntaxes
 call minpac#add('hail2u/vim-css3-syntax')
 call minpac#add('othree/html5.vim')
+call minpac#add('burner/vim-svelte')
 call minpac#add('othree/yajs.vim')
 call minpac#add('posva/vim-vue')
 " colorschemes
