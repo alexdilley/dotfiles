@@ -5,6 +5,7 @@ brew "bash"
 brew "bash-completion"
 brew "git"
 brew "mobile-shell"
+brew "nodenv"
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "redis", restart_service: :changed
