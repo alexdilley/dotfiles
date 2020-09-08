@@ -44,13 +44,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-if has('autocmd')
-  " highlight characters beyond column 80
-  augroup vimrc_autocmds
-    autocmd BufEnter * highlight OverLength ctermbg=red ctermfg=white
-    autocmd BufEnter,WinEnter * match OverLength /\%>80v.\+/
-  augroup END
-endif
+highlight ColorColumn ctermbg=red ctermfg=white
+call matchadd('ColorColumn', '\%81v', 100)
+
+" protect the pinky!
+noremap ; :
 
 " vim-airline statusline
 let g:airline#extensions#tabline#enabled=1

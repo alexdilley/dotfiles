@@ -1,4 +1,6 @@
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rbenv/bin:$PATH"
+export PATH=./node_modules/.bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.config/nvim/pack/minpac/start/fzf/bin:$HOME/.rbenv/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export ANDROID_HOME=/usr/local/share/android-sdk
 
 # editor
 if [ -z "$VISUAL" ]; then
@@ -20,6 +22,8 @@ eval "$(rbenv init -)"
 export PS1='\[\e[1;33m\]\w\[\e[0m\]$(__git_ps1 " (%s)")$ '
 
 export PAGER=less
+
+export MPD_HOST=monty
 
 # iCloud Drive directory
 export ICLOUD=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs

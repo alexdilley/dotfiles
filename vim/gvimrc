@@ -3,7 +3,7 @@ set guioptions-=rL
 " don't use alert dialogs (prefer console-like prompts)
 set guioptions+=c
 " theme
-colorscheme base16-oceanicnext
+colorscheme nord
 let g:airline_theme='base16'
 " type
 set macligatures

@@ -1,3 +1,4 @@
 mpd_host = monty
-execute_on_song_change = "mpc -f %file% current | xargs -0 dirname | xargs -I % ffmpeg -loglevel 0 -y -i $HOME/Music/%/cover.jpg -vf scale=1400:-1 /tmp/cover.png"
+mpd_music_dir = /System/Volumes/Data/mount/music
+execute_on_song_change = "mpc -f %file% current | xargs -0 dirname | xargs -I % ffmpeg -loglevel 0 -y -i /System/Volumes/Data/mount/music/%/cover.jpg -vf scale=1400:-1 /tmp/cover.png"
 user_interface = alternative

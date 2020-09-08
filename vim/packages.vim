@@ -14,12 +14,15 @@ call minpac#add('tpope/vim-sensible')
 " syntaxes
 call minpac#add('hail2u/vim-css3-syntax')
 call minpac#add('othree/html5.vim')
-call minpac#add('burner/vim-svelte')
 call minpac#add('othree/yajs.vim')
+call minpac#add('burner/vim-svelte')
+call minpac#add('leafgarland/typescript-vim')
+call minpac#add('Quramy/tsuquyomi')
 call minpac#add('posva/vim-vue')
 " colorschemes
 call minpac#add('chriskempson/base16-vim')
 call minpac#add('altercation/vim-colors-solarized')
+call minpac#add('arcticicestudio/nord-vim')
 " statusline
 call minpac#add('vim-airline/vim-airline')
 call minpac#add('vim-airline/vim-airline-themes')
@@ -46,6 +49,11 @@ call minpac#add('machakann/vim-highlightedyank')
 " linting/formatting
 call minpac#add('w0rp/ale')
 call minpac#add('prettier/vim-prettier')
+" completion
+" call minpac#add('roxma/nvim-yarp')
+" call minpac#add('roxma/vim-hug-neovim-rpc')
+" call minpac#add('Shougo/deoplete.nvim')
+" call minpac#add('mhartington/nvim-typescript', {'do': './install.sh'})
 " Git
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('airblade/vim-gitgutter')
