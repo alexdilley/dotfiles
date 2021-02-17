@@ -1,10 +1,13 @@
-export PATH=./node_modules/.bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.config/nvim/pack/minpac/start/fzf/bin:$HOME/.rbenv/bin:$PATH
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-export ANDROID_HOME=/usr/local/share/android-sdk
+export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.config/nvim/pack/minpac/start/fzf/bin:$HOME/.rbenv/bin:$HOME/.serverless/bin:./node_modules/.bin:/usr/local/bin:/usr/local/sbin:$PATH
+# export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+# export ANDROID_HOME=/usr/local/share/android-sdk
+
+# terminal type
+TERM=xterm-256color-italic
 
 # editor
 if [ -z "$VISUAL" ]; then
-	type vim >/dev/null 2>&1 && VISUAL=vim || VISUAL=vi
+	type nvim >/dev/null 2>&1 && VISUAL=nvim || VISUAL=vi
 fi
 EDITOR=$VISUAL
 export VISUAL EDITOR
@@ -14,19 +17,24 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 fi
 
-# nodenv/rbenv: enable shims and autocompletion
-eval "$(nodenv init -)"
-eval "$(rbenv init -)"
+# nodenv/nvm/rbenv/chruby: enable shims and autocompletion
+# eval "$(nodenv init -)"
+# eval "$(rbenv init -)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
 
 # prompt
 export PS1='\[\e[1;33m\]\w\[\e[0m\]$(__git_ps1 " (%s)")$ '
 
 export PAGER=less
 
-export MPD_HOST=monty
-
 # iCloud Drive directory
 export ICLOUD=$HOME/Library/Mobile\ Documents/com~apple~CloudDocs
+
+export MPD_HOST=monty
 
 alias ls='ls -G'
 alias artcat="ls /tmp/cover.png | entr -c $HOME/.ncmpcpp/artcat"

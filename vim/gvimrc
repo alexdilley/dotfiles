@@ -3,12 +3,15 @@ set guioptions-=rL
 " don't use alert dialogs (prefer console-like prompts)
 set guioptions+=c
 " theme
+set background=dark
 colorscheme nord
-let g:airline_theme='base16'
+" colorscheme gruvbox8_soft
+" let g:airline_theme='base16'
 " type
 set macligatures
-set guifont=Inconsolata-dz\ for\ Powerline:h10
-set linespace=2
+" set guifont=Inconsolata-dz\ for\ Powerline:h10
+set guifont=OperatorMonoSSmLig-Book:h10
+set linespace=4
 " override theme settings
 autocmd Syntax * hi Comment gui=italic
 autocmd Syntax * hi Type gui=italic

@@ -32,5 +32,5 @@ vim
 
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-george                          git=NONE
+annyong                          git=NONE
 [endhosts]
