@@ -30,3 +30,14 @@ vim.lsp.config(
     },
   }
 )
+
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function ()
+    local builtin = require('telescope.builtin')
+
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0 })
+    vim.keymap.set('n', 'gr', builtin.lsp_references, { buffer = 0 })
+
+    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { buffer = 0 })
+  end
+})
