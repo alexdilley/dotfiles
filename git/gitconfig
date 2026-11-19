@@ -7,16 +7,18 @@
 	lol = log --pretty=oneline --abbrev-commit --graph --decorate
 	st = status -s
 [branch]
-	autosetuprebase = always
+	autoSetupMerge = simple
+	autoSetupRebase = always
 [color]
 	ui = true
 [core]
-	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+	editor = /opt/homebrew/bin/nvim
+	pager = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -x4
 [fetch]
 	prune = true
 [pull]
 	rebase = true
 [push]
-	default = upstream
-[url "ssh://git@heroku.com/"]
-	insteadOf = https://git.heroku.com/
+	autoSetupRemote = true
+[init]
+	defaultBranch = trunk
